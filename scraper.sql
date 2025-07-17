@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS tyre_scraper;
+USE tyre_scraper;
+
+CREATE TABLE IF NOT EXISTS tyres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    website VARCHAR(255),
+    brand VARCHAR(100),
+    pattern VARCHAR(255),
+    size VARCHAR(100),
+    price VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
